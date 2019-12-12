@@ -1,0 +1,67 @@
+* {
+  font-family: 'Space Mono', monospace;
+}
+
+.is-overlay {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.title {
+  font-family: 'Notable', sans-serif;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/featured/?cyberpunk,neon city') no-repeat center center/cover;
+    
+  .hero-head {
+    .navbar {
+      // display: none;
+    }
+
+    .navbar-menu {
+      background-color: transparent;
+    }
+  }
+  
+  .hero-body {
+    margin-top: 47.5vh;
+
+    .navbar-item {
+      background-color: transparent !important;
+    }
+
+    // #arrow {
+    //   position: absolute;
+    //   left: 50%;
+    //   bottom: 5%;
+    // }
+  }
+}
+
+#gallery .is-overlay {
+  position: absolute;
+  visibility: hidden;
+  // transition: 2.5s ease-in;
+
+  .overlay-content {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: .25rem;
+  
+    .title,
+    .proj-description {
+      margin-bottom: .25rem;
+    }
+
+    .tech-stack {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#gallery .image:hover .is-overlay {
+  visibility: visible;
+}
