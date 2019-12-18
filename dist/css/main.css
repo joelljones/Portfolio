@@ -26,6 +26,10 @@
   background-color: transparent !important;
 }
 
+#gallery {
+  background-color: #595959;
+}
+
 #gallery .is-overlay {
   position: absolute;
   visibility: hidden;
